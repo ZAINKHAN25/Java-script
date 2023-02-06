@@ -50,3 +50,34 @@ var F = prompt("Give me the temperature in Farenheit")
 document.write(`<p>
 ${F}<sup>o</sup> is ${(F - 32) * 5/9}F<sup>o</sup>
 `)
+
+
+document.write(`
+
+
+Price of item 1 is 650<br />
+Quantity of item 1 is 3<br />
+Price of item 2 is 100<br />
+Quantity of item 2 is 7<br />
+Shipping Charges 100<br />
+Total cost of your order is 2750`)
+
+
+var tmarks = 980;
+var obmarks = 804;
+document.write(`Total marks: ${tmarks}<br />
+Marks obtained: ${obmarks}<br />
+Percentage : ${obmarks / tmarks * 100}% 
+`)
+
+var dollar = 10;
+var rial = 25;
+var dollarconverter = `${dollar  * 277.81}`;
+var rialconverter = `${rial * 74.04}`;
+document.write(`<p>Total Currency in PKR ${dollarconverter+rialconverter}</p>`)
+
+var CurrentYear = new Date().getFullYear();
+var BirthYear = prompt(`Wirte here when you are born`)
+document.write(`<p>Your age is ${CurrentYear - BirthYear}</p>`)
+
+
