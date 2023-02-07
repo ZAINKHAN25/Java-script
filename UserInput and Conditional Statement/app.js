@@ -41,4 +41,96 @@ if (++a === 5){
 alert("given condition for variable a is true");
 }
 
+let subject1 = prompt("Enter marks obtained in subject 1:");
+let subject2 = prompt("Enter marks obtained in subject 2:");
+let subject3 = prompt("Enter marks obtained in subject 3:");
+let totalMarks = 300;
+
+let marksObtained = parseInt(subject1) + parseInt(subject2) + parseInt(subject3);
+let percentage = (marksObtained / totalMarks) * 100;
+
+let grade = "";
+if (percentage >= 90) {
+  grade = "A+";
+}
+else if (percentage >= 80) {
+  grade = "A";
+} 
+else if (percentage >= 70) {
+  grade = "B";
+} 
+else if (percentage >= 60) {
+  grade = "C";
+} 
+else if (percentage >= 50) {
+  grade = "D";
+} 
+else {
+  grade = "F";
+}
+
+document.write("Percentage: " + percentage + "%<br>");
+document.write("Grade: " + grade);
+
+var secretNumber = 7;
+var guess = parseInt(prompt("Guess the secret number (between 1 and 10):"));
+
+if (guess === secretNumber) {
+  alert("Bingo! Correct answer");
+} else if (guess + 1 === secretNumber || guess - 1 === secretNumber) {
+  alert("Close enough to the correct answer");
+} else {
+  alert("Wrong answer. Try again!");
+}
+
+
+let num = prompt("Enter a number: ");
+if (num % 3 === 0) {
+  alert(num + " is divisible by 3.");
+} else {
+  alert(num + " is not divisible by 3.");
+}
+
+let num = prompt("Enter a number: ");
+
+if (num % 2 == 0) {
+  alert(num + " is an even number");
+} else {
+  alert(num + " is an odd number");
+}
+
+let temperature = parseInt(prompt("Enter the temperature:"));
+
+if (temperature > 40) {
+  alert("It is too hot outside.");
+} else if (temperature > 30) {
+  alert("The Weather today is Normal.");
+} else if (temperature > 20) {
+  alert("Today’s Weather is cool.");
+} else if (temperature > 10) {
+  alert("OMG! Today’s weather is so Cool.");
+}
+
+
+
+  
+
+var firstNumber = parseFloat(prompt("Enter the first number:"));
+var secondNumber = parseFloat(prompt("Enter the second number:"));
+var operation = prompt("Enter the operation (+, -, *, /, %):");
+
+if (operation === "+") {
+  alert(firstNumber + secondNumber);
+} else if (operation === "-") {
+  alert(firstNumber - secondNumber);
+} else if (operation === "*" || operation === "X" || operation === "x") {
+  alert(firstNumber * secondNumber);
+} else if (operation === "/") {
+  alert(firstNumber / secondNumber);
+} else if (operation === "%") {
+  alert(firstNumber % secondNumber +"%");
+} else {
+  alert("Invalid operation");
+}
+
 
